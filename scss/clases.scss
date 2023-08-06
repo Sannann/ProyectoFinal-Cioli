@@ -1,0 +1,31 @@
+@mixin objetos-destacados {
+    position: absolute
+}
+
+@mixin sizes ($width, $height, $top, $left) {
+    height: $height;
+    width: $width;
+    top: $top;
+    left: $left;
+}
+
+#articulosprincipales {
+    @include sizes(650px, 500px, 300px, 40px);
+    @include objetos-destacados;
+}
+
+#perks {
+    @include objetos-destacados;
+    vertical-align: top;
+}
+
+#guns {
+    width: 600;
+    height: 600px;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    overflow: visible;
+    vertical-align: top;
+
+}
